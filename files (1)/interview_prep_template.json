@@ -1,0 +1,14 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Buat daftar pertanyaan interview + jawaban singkat untuk role: \"<ROLE>\" dan level: \"<LEVEL>\". Skema: {\"role\":\"string\",\"level\":\"string\",\"questions\":[{\"q\":\"string\",\"a\":\"string\",\"difficulty\":\"string\"}],\"tips\":\"string\"}.",
+  "example_input": "Role: backend engineer, Level: senior.",
+  "example_output": {
+    "role":"backend engineer",
+    "level":"senior",
+    "questions":[
+      {"q":"Jelaskan desain API idempotent","a":"Idempotent berarti multiple identical requests memberikan efek yang sama...","difficulty":"medium"}
+    ],
+    "tips":"Siapkan contoh arsitektur dan trade-offs"
+  },
+  "settings":{"temperature":0.0,"max_tokens":500}
+}

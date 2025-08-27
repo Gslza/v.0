@@ -1,0 +1,16 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Buat laporan bug terstruktur dari: \"<BUG_DESCRIPTION>\". Skema: {\"title\":\"string\",\"environment\":\"string\",\"steps_to_reproduce\":[\"string\"],\"expected\":\"string\",\"actual\":\"string\",\"severity\":\"string (low|medium|high|critical)\",\"attachments\":[\"string\"],\"notes\":\"string|null\"}.",
+  "example_input": "Ketika klik tombol submit, muncul error 500.",
+  "example_output": {
+    "title":"Error 500 saat submit form",
+    "environment":"production v1.2.3",
+    "steps_to_reproduce":["Buka /form","Isi field","Klik submit"],
+    "expected":"Form ter-submit dan muncul konfirmasi",
+    "actual":"Muncul error 500",
+    "severity":"high",
+    "attachments":["screenshot.png"],
+    "notes":null
+  },
+  "settings":{"temperature":0.0,"max_tokens":350}
+}

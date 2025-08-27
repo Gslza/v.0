@@ -1,0 +1,12 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Ringkas teks berikut: \"<TEXT>\" menjadi {\"language\":\"string\",\"title\":\"string|null\",\"summary\":\"string\",\"key_points\":[\"string\"]}.",
+  "example_input": "Artikel panjang tentang perubahan iklim...",
+  "example_output": {
+    "language":"indonesian",
+    "title":"Dampak Perubahan Iklim",
+    "summary":"Perubahan iklim disebabkan oleh emisi gas rumah kaca yang berpengaruh pada cuaca ekstrem...",
+    "key_points":["Emisi CO2 meningkat","Perlu mitigasi","Reskilling sektor terdampak"]
+  },
+  "settings":{"temperature":0.0,"max_tokens":420}
+}

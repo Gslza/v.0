@@ -1,0 +1,15 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Parse resume / CV text: \"<RESUME_TEXT>\". Skema: {\"name\":\"string|null\",\"email\":\"string|null\",\"phone\":\"string|null\",\"summary\":\"string|null\",\"skills\":[\"string\"],\"experience\":[{\"company\":\"string\",\"role\":\"string\",\"start_date\":\"string|null\",\"end_date\":\"string|null\",\"description\":\"string|null\"}],\"education\":[{\"institution\":\"string\",\"degree\":\"string\",\"year\":\"string|null\"}]}.",
+  "example_input": "John Doe, Senior Engineer at X (2018-2024), skills: Python, SQL",
+  "example_output": {
+    "name":"John Doe",
+    "email":null,
+    "phone":null,
+    "summary":"Senior Engineer berpengalaman dengan Python dan SQL",
+    "skills":["Python","SQL"],
+    "experience":[{"company":"X","role":"Senior Engineer","start_date":"2018","end_date":"2024","description":null}],
+    "education":[]
+  },
+  "settings":{"temperature":0.0,"max_tokens":700}
+}

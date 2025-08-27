@@ -1,0 +1,14 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Dari transkrip/summary rapat berikut: \"<MEETING_TEXT>\", hasilkan objek: {\"title\":\"string\",\"date\":\"string\",\"attendees\":[\"string\"],\"summary\":\"string\",\"action_items\":[{\"action\":\"string\",\"owner\":\"string|null\",\"due_date\":\"string|null\"}],\"decisions\":[\"string\"]}.",
+  "example_input": "Rapat: Bahas fitur checkout, hadir: A, B. Keputusan: gunakan payment gateway X.",
+  "example_output": {
+    "title":"Rapat Fitur Checkout",
+    "date":"2025-08-25",
+    "attendees":["A","B"],
+    "summary":"Mendiskusikan integrasi payment gateway dan alur checkout.",
+    "action_items":[{"action":"Integrasi payment gateway X","owner":"dev-team","due_date":"2025-09-01"}],
+    "decisions":["Gunakan payment gateway X untuk MVP"]
+  },
+  "settings":{"temperature":0.0,"max_tokens":400}
+}

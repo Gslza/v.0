@@ -1,0 +1,10 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON describing files. NOTHING ELSE.",
+  "user": "Permintaan: \"Buat proyek sederhana sesuai instruksi: <PROJECT_DESCRIPTION>\"\\nSkema: {\"files\":[{\"filename\":\"string\",\"language\":\"string\",\"content\":\"string\"}],\"run_instructions\":\"string\"}",
+  "example_input": "Buat API Flask sederhana dengan endpoint /hello",
+  "example_output":{
+    "files":[{"filename":"app.py","language":"python","content":"from flask import Flask\\napp=Flask(__name__)\\n@app.route('/hello')\\ndef hello():\\n    return 'Hello'\\nif __name__=='__main__':\\n    app.run()"}],
+    "run_instructions":"pip install flask && python app.py"
+  },
+  "settings":{"temperature":0.0,"max_tokens":1200}
+}

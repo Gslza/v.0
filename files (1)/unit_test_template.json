@@ -1,0 +1,12 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Buat unit tests untuk fungsi berikut: \"<FUNCTION_CODE>\". Skema: {\"language\":\"string\",\"tests\":[{\"name\":\"string\",\"input\":\"string\",\"expected\":\"string\"}],\"framework\":\"string\",\"notes\":\"string|null\"}.",
+  "example_input": "Function: def add(a,b): return a+b",
+  "example_output": {
+    "language":"python",
+    "tests":[{"name":"test_add_positive","input":"add(2,3)","expected":"5"},{"name":"test_add_zero","input":"add(0,0)","expected":"0"}],
+    "framework":"pytest",
+    "notes":null
+  },
+  "settings":{"temperature":0.0,"max_tokens":500}
+}

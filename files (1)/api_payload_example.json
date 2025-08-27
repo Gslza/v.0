@@ -1,0 +1,9 @@
+{
+  "model":"gpt-5-mini",
+  "temperature":0.0,
+  "max_tokens":800,
+  "messages":[
+    {"role":"system","content":"RESPOND ONLY WITH VALID JSON. NOTHING ELSE."},
+    {"role":"user","content":"Skema: {\"name\":\"string|null\",\"email\":\"string|null\"}\\nTeks: \"Halo, saya Andi dari PT Contoh. Email: andi@contoh.com\"\\nKeluarkan hanya JSON sesuai skema."}
+  ]
+}

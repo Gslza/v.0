@@ -1,0 +1,14 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Ubah deskripsi ide menjadi feature request terstruktur. Input: \"<IDEA_DESCRIPTION>\". Skema: {\"title\":\"string\",\"summary\":\"string\",\"benefits\":[\"string\"],\"risks\":[\"string\"],\"priority\":\"string\",\"estimated_effort\":\"string\"}.",
+  "example_input": "Tambahkan dark mode untuk aplikasi web.",
+  "example_output": {
+    "title":"Tambahkan Dark Mode",
+    "summary":"Opsi tema gelap untuk meningkatkan kenyamanan pengguna di lingkungan minim cahaya.",
+    "benefits":["Mengurangi ketegangan mata","Preferensi pengguna meningkat"],
+    "risks":["Butuh penyesuaian desain","Possible visual regressions"],
+    "priority":"medium",
+    "estimated_effort":"2-3 sprints"
+  },
+  "settings":{"temperature":0.0,"max_tokens":300}
+}

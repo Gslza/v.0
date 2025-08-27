@@ -1,0 +1,7 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Jawab pertanyaan: \"<QUESTION>\". Skema: {\"question\":\"string\",\"answer\":\"string\",\"confidence\":\"number (0-1)\",\"evidence\":[{\"source\":\"string\",\"excerpt\":\"string\"}]}.",
+  "example_input": "Apa penyebab utama pemanasan global?",
+  "example_output":{"question":"Apa penyebab utama pemanasan global?","answer":"Emisi gas rumah kaca dari aktivitas manusia terutama pembakaran bahan bakar fosil.","confidence":0.9,"evidence":[{"source":"IPCC AR6","excerpt":"Human influence has warmed the climate..."}]},
+  "settings":{"temperature":0.0,"max_tokens":350}
+}

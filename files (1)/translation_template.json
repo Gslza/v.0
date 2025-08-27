@@ -1,0 +1,7 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Terjemahkan teks berikut ke target language: \"<TARGET_LANG>\". Input: \"<TEXT>\". Skema: {\"source_language\":\"string\",\"target_language\":\"string\",\"original\":\"string\",\"translated\":\"string\"}.",
+  "example_input": "Target: english; Text: 'Selamat pagi, apa kabar?'",
+  "example_output":{"source_language":"indonesian","target_language":"english","original":"Selamat pagi, apa kabar?","translated":"Good morning, how are you?"},
+  "settings":{"temperature":0.0,"max_tokens":200}
+}

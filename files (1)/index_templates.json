@@ -1,0 +1,26 @@
+{
+  "templates": [
+    "search_query_template.json",
+    "web_search_template.json",
+    "semantic_code_search_template.json",
+    "task_todo_template.json",
+    "meeting_notes_template.json",
+    "email_template.json",
+    "bug_report_template.json",
+    "feature_request_template.json",
+    "interview_prep_template.json",
+    "code_review_template.json",
+    "unit_test_template.json",
+    "sql_generation_template.json",
+    "invoice_extraction_template.json",
+    "resume_parsing_template.json",
+    "summarization_template.json",
+    "translation_template.json",
+    "qa_template.json",
+    "casual_chat_template.json",
+    "compute_template.json",
+    "codegen_template.json",
+    "extractor_template.json",
+    "api_payload_example.json"
+  ]
+}

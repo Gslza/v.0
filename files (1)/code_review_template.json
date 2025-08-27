@@ -1,0 +1,11 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Dari diff atau potongan kode: \"<CODE_SNIPPET>\", hasilkan review terstruktur: {\"summary\":\"string\",\"issues\":[{\"line\":\"number|null\",\"severity\":\"string\",\"comment\":\"string\"}],\"suggested_changes\":\"string\"}.",
+  "example_input": "Kode: fungsi tanpa input validation.",
+  "example_output": {
+    "summary":"Fungsi bekerja tapi kurang validasi input.",
+    "issues":[{"line":42,"severity":"medium","comment":"Perlu cek null dan tipe input"}],
+    "suggested_changes":"Tambahkan guard clauses dan unit test untuk edge cases."
+  },
+  "settings":{"temperature":0.0,"max_tokens":400}
+}

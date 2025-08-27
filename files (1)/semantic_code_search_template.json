@@ -1,0 +1,14 @@
+{
+  "system": "You are a tool that performs semantic code search. RESPOND ONLY WITH VALID JSON.",
+  "user": "Query natural language: \"<NATURAL_QUERY>\". Skema output: {\"query\":\"string\",\"matches\":[{\"file\":\"string\",\"path\":\"string\",\"score\":\"number\",\"snippet\":\"string\"}],\"notes\":\"string|null\"}.",
+  "example_input": "Find functions that parse JWT tokens in repo",
+  "example_output": {
+    "query":"Find functions that parse JWT tokens in repo",
+    "matches":[
+      {"file":"auth.py","path":"src/auth.py","score":0.92,"snippet":"def parse_jwt(token): ..."},
+      {"file":"jwt_utils.go","path":"pkg/jwt/jwt_utils.go","score":0.86,"snippet":"func ParseToken(token string) ("}
+    ],
+    "notes":null
+  },
+  "settings":{"temperature":0.0,"max_tokens":300}
+}

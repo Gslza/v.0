@@ -1,0 +1,14 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Buat email profesional berdasarkan konteks: \"<CONTEXT>\". Skema: {\"subject\":\"string\",\"body\":\"string\",\"language\":\"string\",\"tone\":\"string (formal|semi-formal|casual)\",\"cc\":[\"string\"],\"attachments\":\"string|null\"}.",
+  "example_input": "Context: Minta konfirmasi waktu meeting besok dari klien.",
+  "example_output": {
+    "subject":"Konfirmasi Waktu Meeting - Besok",
+    "body":"Halo Bapak/Ibu,\n\nApakah jadwal meeting besok pukul 10.00 masih sesuai? Mohon konfirmasi.\n\nTerima kasih,\nTim Produk",
+    "language":"indonesian",
+    "tone":"formal",
+    "cc":[],
+    "attachments":null
+  },
+  "settings":{"temperature":0.0,"max_tokens":300}
+}

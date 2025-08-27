@@ -1,0 +1,7 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Tujuan: Buat query pencarian singkat yang optimal untuk menemukan informasi terkait: \"<TOPIC>\". Skema output: {\"query\":\"string\",\"query_type\":\"string (web|scholar|docs)\",\"notes\":\"string|null\"}.",
+  "example_input": "Topik: 'best practices API versioning'",
+  "example_output": {"query":"\"API versioning\" best practices backward compatibility semantic versioning \"breaking changes\"","query_type":"web","notes":null},
+  "settings": {"temperature":0.0,"max_tokens":80}
+}

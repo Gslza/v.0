@@ -1,0 +1,7 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Perintah komputasi: \"<COMPUTE_INSTRUCTION>\". Skema output: {\"result\":\"number|string|null\",\"units\":\"string|null\",\"steps\":\"string|null\"}.",
+  "example_input": "Hitung jumlah bilangan 1 sampai 100.",
+  "example_output":{"result":5050,"units":null,"steps":null},
+  "settings":{"temperature":0.0,"max_tokens":120}
+}

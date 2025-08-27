@@ -1,0 +1,7 @@
+{
+  "system": "Anda adalah extractor. RESPOND ONLY WITH VALID JSON that matches the schema provided. If a value is not present, set it to null. Do not output any text outside the JSON.",
+  "user": "Teks: \"<TEKS_INPUT>\"\\nSkema: {\"name\":\"string|null\",\"email\":\"string|null\",\"phone\":\"string|null\",\"company\":\"string|null\",\"notes\":\"string|null\"}\\nOutput: Keluarkan hanya JSON sesuai skema.",
+  "example_input":"Halo, saya Rina dari PT Alfa. Email: rina@alfa.co, Telepon: +628123456.",
+  "example_output":{"name":"Rina","email":"rina@alfa.co","phone":"+628123456","company":"PT Alfa","notes":null},
+  "settings":{"temperature":0.0,"max_tokens":200}
+}

@@ -1,0 +1,13 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Ekstrak data dari teks/foto invoice: \"<INVOICE_TEXT>\". Skema: {\"invoice_number\":\"string|null\",\"date\":\"string|null\",\"vendor\":\"string|null\",\"items\":[{\"description\":\"string\",\"qty\":\"number\",\"unit_price\":\"number\",\"total\":\"number\"}],\"subtotal\":\"number|null\",\"tax\":\"number|null\",\"total\":\"number|null\"}.",
+  "example_input": "Invoice: No INV-001 tanggal 2025-08-01, Vendor: PT Contoh, Item: Widget x2 @100000",
+  "example_output": {
+    "invoice_number":"INV-001",
+    "date":"2025-08-01",
+    "vendor":"PT Contoh",
+    "items":[{"description":"Widget","qty":2,"unit_price":100000,"total":200000}],
+    "subtotal":200000,"tax":0,"total":200000
+  },
+  "settings":{"temperature":0.0,"max_tokens":600}
+}

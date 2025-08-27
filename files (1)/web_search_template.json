@@ -1,0 +1,14 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE.",
+  "user": "Buat ringkasan hasil pencarian web fiksi untuk query: \"<QUERY>\". Skema: {\"query\":\"string\",\"top_results\":[{\"title\":\"string\",\"url\":\"string\",\"snippet\":\"string\"}],\"recommended_filters\":[\"string\"]}.",
+  "example_input": "Query: 'cara optimasi query SQL MySQL index'",
+  "example_output": {
+    "query":"cara optimasi query SQL MySQL index",
+    "top_results":[
+      {"title":"MySQL Indexing Best Practices","url":"https://example.com/mysql-indexing","snippet":"Panduan indexing untuk meningkatkan performa query..."},
+      {"title":"Optimizing MySQL Queries","url":"https://example.com/opt-mysql","snippet":"Gunakan EXPLAIN, index composite, dan limit..."}
+    ],
+    "recommended_filters":["site:dev.mysql.com","filetype:pdf"]
+  },
+  "settings":{"temperature":0.0,"max_tokens":220}
+}
