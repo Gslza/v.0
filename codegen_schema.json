@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {"type": "string"},
+          "language": {"type": "string"},
+          "content": {"type": "string"}
+        },
+        "required": ["filename","language","content"],
+        "additionalProperties": false
+      }
+    },
+    "run_instructions": {"type": "string"}
+  },
+  "required": ["files","run_instructions"],
+  "additionalProperties": false
+}

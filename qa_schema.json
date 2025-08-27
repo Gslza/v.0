@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "question": {"type": "string"},
+    "answer": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {"type": "string"},
+          "excerpt": {"type": "string"}
+        },
+        "required": ["source","excerpt"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["question","answer","confidence","evidence"],
+  "additionalProperties": false
+}

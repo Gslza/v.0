@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "reply": {"type": "string"},
+    "tone": {"type": "string"},
+    "language": {"type": "string"},
+    "casual_level": {"type": "number", "minimum": 1, "maximum": 5},
+    "emojis_allowed": {"type": "boolean"},
+    "suggested_followups": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  },
+  "required": ["reply","tone","language","casual_level","emojis_allowed","suggested_followups"],
+  "additionalProperties": false
+}

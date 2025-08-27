@@ -1,0 +1,12 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON describing files. NOTHING ELSE.",
+  "user": "Permintaan: \"Buat proyek sederhana sesuai instruksi: <DESKRIPSI_PROYEK>\"\\nSkema: {\"files\":[{\"filename\":\"string\",\"language\":\"string\",\"content\":\"string\"}],\"run_instructions\":\"string\"}",
+  "example_output": {
+    "files": [
+      {"filename":"main.py","language":"python","content":"print('Halo Dunia')"},
+      {"filename":"requirements.txt","language":"text","content":"flask==2.2.0"}
+    ],
+    "run_instructions": "python main.py"
+  },
+  "settings": {"temperature": 0.0, "max_tokens": 1200}
+}

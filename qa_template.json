@@ -1,0 +1,14 @@
+{
+  "system": "RESPOND ONLY WITH JSON. NOTHING ELSE.",
+  "user": "Pertanyaan: \"<QUESTION>\"\\nSkema: {\"question\":\"string\",\"answer\":\"string\",\"confidence\":\"number (0-1)\",\"evidence\":[{\"source\":\"string\",\"excerpt\":\"string\"}]}\\nJika tidak ada bukti, berikan evidence: [].",
+  "example_input": "Apa faktor utama perubahan iklim?",
+  "example_output": {
+    "question": "Apa faktor utama perubahan iklim?",
+    "answer": "Emisi gas rumah kaca dari aktivitas manusia, terutama CO2 dari pembakaran bahan bakar fosil, adalah faktor utama.",
+    "confidence": 0.9,
+    "evidence": [
+      {"source": "IPCC AR6", "excerpt": "Human influence has warmed the climate at a rate that is unprecedented in at least the last 2000 years."}
+    ]
+  },
+  "settings": {"temperature": 0.0, "max_tokens": 400}
+}

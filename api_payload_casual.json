@@ -1,0 +1,15 @@
+{
+  "model": "gpt-5-mini",
+  "temperature": 0.4,
+  "max_tokens": 250,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a friendly, casual assistant. RESPOND ONLY WITH VALID JSON matching the schema provided. Keep the 'reply' field natural and casual in tone. If a value is unknown, set it to null. Do not output any text outside the JSON."
+    },
+    {
+      "role": "user",
+      "content": "Context: \"Obrolan santai tentang rencana akhir pekan.\"\\nUser message: \"Punya ide buat ngapain Sabtu ini?\"\\nSchema: {\"reply\":\"string\",\"tone\":\"string\",\"language\":\"string\",\"casual_level\":\"number (1-5)\",\"emojis_allowed\":\"boolean\",\"suggested_followups\":[\"string\"]}\\nKeluarkan hanya JSON sesuai skema."
+    }
+  ]
+}

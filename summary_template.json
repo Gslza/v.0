@@ -1,0 +1,25 @@
+{
+  "system": "RESPOND ONLY WITH JSON. NOTHING ELSE.",
+  "user": "Artikel: \"<ISI_ARTIKEL>\"\\nInstruksi: Ringkas menjadi objek JSON sesuai skema. Jika artikel kurang dari 5 poin, isi sisanya dengan null.",
+  "schema": {
+    "language": "string",
+    "title": "string",
+    "key_points": ["string","string","string","string","string"],
+    "tags": ["string"],
+    "summary_length_chars": "number"
+  },
+  "example_output": {
+    "language": "indonesian",
+    "title": "Dampak AI pada Dunia Kerja",
+    "key_points": [
+      "Otomasi meningkatkan produktivitas tugas berulang",
+      "Kebutuhan keterampilan baru di bidang AI",
+      "Perubahan struktur pekerjaan jangka menengah",
+      "Peluang untuk peningkatan layanan pelanggan",
+      "Perlu kebijakan reskilling"
+    ],
+    "tags": ["AI","ketenagakerjaan","reskilling"],
+    "summary_length_chars": 420
+  },
+  "settings": {"temperature": 0.0, "max_tokens": 600}
+}

@@ -1,0 +1,7 @@
+{
+  "system": "RESPOND ONLY WITH VALID JSON. NOTHING ELSE. If unsure, set values to null.",
+  "user": "Perintah: \"<PERINTAH_MATEMATIKA/AGGREGATE>\"\\nSkema: {\"result\":\"number|null\",\"units\":\"string|null\",\"explanation\":\"string|null\"}\\nKeluarkan hanya JSON.",
+  "example_input": "Hitung jumlah bilangan 1 sampai 5.",
+  "example_output": {"result": 15, "units": null, "explanation": null},
+  "settings": {"temperature": 0.0, "max_tokens": 80}
+}

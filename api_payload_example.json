@@ -1,0 +1,15 @@
+{
+  "model": "gpt-5-mini",
+  "temperature": 0.0,
+  "max_tokens": 800,
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an assistant that MUST ONLY RESPOND with valid JSON matching the schema given. If unsure, set values to null. Do not output any extra text."
+    },
+    {
+      "role": "user",
+      "content": "Skema: {\"name\":\"string|null\",\"email\":\"string|null\",\"phone\":\"string|null\",\"company\":\"string|null\",\"notes\":\"string|null\"}\\nTeks: \"Halo, saya Andi dari PT Contoh. Email: andi@contoh.com\"\\nKeluarkan hanya JSON sesuai skema."
+    }
+  ]
+}
