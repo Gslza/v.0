@@ -1,10 +1,10 @@
 # Prompt Templates — Koleksi Template Prompt JSON
 
-##Deskripsi singkat
+Deskripsi singkat
 -----------------
 Repositori ini berisi kumpulan template prompt berbasis JSON yang dirancang untuk menghasilkan keluaran AI terstruktur (hanya JSON). Template ditujukan untuk memudahkan integrasi dengan pipeline otomatis, validasi JSON Schema, dan pengujian A/B. Template cocok dipakai untuk ekstraksi data, ringkasan, QA dengan bukti, generasi kode proyek, percakapan santai, dan contoh payload API.
 
-##Isi utama
+Isi utama
 ---------
 - extractor_template.json — ekstraksi kontak / form
 - compute_template.json — perintah komputasi sederhana
@@ -15,13 +15,13 @@ Repositori ini berisi kumpulan template prompt berbasis JSON yang dirancang untu
 - api_payload_example.json — contoh payload messages untuk dipakai langsung ke endpoint chat
 - contact_schema.json, summary_schema.json, qa_schema.json, codegen_schema.json, casual_chat_schema.json — JSON Schema untuk validasi
 
-##Tujuan penggunaan
+Tujuan penggunaan
 -----------------
 - Memaksa model membalas hanya dengan JSON yang valid sesuai skema.
 - Mempermudah parsing dan integrasi hasil AI ke sistem backend.
 - Menyediakan contoh payload siap pakai untuk API Chat (sesuaikan model & setting).
 
-##Panduan singkat (Quick start)
+Panduan singkat (Quick start)
 -----------------------------
 1. Pilih template yang sesuai (mis. extractor_template.json).
 2. Sesuaikan nilai placeholder di field `user` seperti <TEKS_INPUT> atau <DESKRIPSI_PROYEK>.
@@ -66,7 +66,7 @@ Expected JSON:
 }
 ```
 
-##Validasi & testing
+Validasi & testing
 ------------------
 - Gunakan validator JSON Schema di sisi client (ajv, jsonschema, dsf.).
 - Jalankan batch test (50–200 sampel) untuk mengukur:
@@ -74,18 +74,18 @@ Expected JSON:
   - Ketepatan entitas (precision/recall) terhadap dataset ground truth.
 - Jika hasil sering mengandung teks tambahan, tambahkan few-shot examples atau perketat system message.
 
-##Tips praktis
+Tips praktis
 -----------
 - Gunakan temperature = 0.0 untuk determinisme; naikkan sedikit (0.2–0.4) untuk nada santai di casual_chat.
 - Minta model untuk mengisi nilai yang tidak diketahui dengan `null`.
 - Sertakan `max_tokens` cukup besar untuk output besar (mis. codegen).
 - Simpan schema dan contoh expected output bersama template agar tim QA dapat menjalankan validasi otomatis.
 
-##Kontribusi
+Kontribusi
 ----------
 Silakan buat PR yang menambahkan template baru, contoh input/expected output, atau suite test. Beri nama file yang jelas dan sertakan JSON Schema bila relevan.
 
-##Lisensi
+Lisensi
 -------
 MIT — bebas dipakai dan dimodifikasi.
 
